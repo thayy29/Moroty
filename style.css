@@ -133,10 +133,30 @@ img {
   padding: 1.5rem;
 }
 
-.top-box a {
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
   grid-area: top-box-a;
 }
 
-.top-box b {
+.top-box-b {
   grid-area: top-box-b;
+}
+
+/* Boxes */
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit)
+   minmax(200px, 1fr);
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
 }
